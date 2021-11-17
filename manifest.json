@@ -25,7 +25,8 @@
     {
       "js": ["tastedive.js"],
       "matches": ["https://tastedive.com/movies/like/*"],
-      "run_at": "document_end"
+      "run_at": "document_end",
+      "all_frames": true
     },
     {
       "js": ["lookmovie.js"],
