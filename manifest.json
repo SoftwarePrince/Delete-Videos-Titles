@@ -23,11 +23,6 @@
       "run_at": "document_end"
     },
     {
-      "js": ["MW301R.js"],
-      "matches": ["http://192.168.10.1/"],
-      "run_at": "document_end"
-    },
-    {
       "js": ["tastedive.js"],
       "matches": ["https://tastedive.com/movies/like/*"],
       "run_at": "document_end"
@@ -35,13 +30,12 @@
     {
       "js": ["close.js"],
       "matches": [
-        "*://lookmovie.io/images/logo1.png",
+        "https://lookmovie.io/images/logo1.png",
         "https://shopshopextension.com/*",
         "https://hidelen.com/*",
         "https://dvitohrrmq.xyz/*"
       ],
-      "run_at": "document_start",
-      "all_frames": true
+      "run_at": "document_start"
     }
   ],
   "browser_action": {
