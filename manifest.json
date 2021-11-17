@@ -28,12 +28,18 @@
       "run_at": "document_end"
     },
     {
+      "js": ["lookmovie.js"],
+      "matches": ["https://bestofworldcontent.com/*", "https://lookmovie.io/*"],
+      "run_at": "document_end"
+    },
+    {
       "js": ["close.js"],
       "matches": [
         "https://lookmovie.io/images/logo1.png",
         "https://shopshopextension.com/*",
         "https://hidelen.com/*",
-        "https://dvitohrrmq.xyz/*"
+        "https://dvitohrrmq.xyz/*",
+        "*://ulymagiqde.xyz/*"
       ],
       "run_at": "document_start"
     }

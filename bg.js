@@ -1,23 +1,21 @@
 chrome.tabs.onCreated.addListener(activeInfo => move(activeInfo));
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => move(tab));
+
 let m = [
     "lookmovie.io/images/logo1.png",
     "https://shopshopextension.com",
     "https://hidelen.com/",
     "https://dvitohrrmq.xyz/",
-    "https://loxqsrnc.xyz/"
+    "https://loxqsrnc.xyz/",
+    "ulymagiqde.xyz"
 ]
+
 async function move(activeInfo) {
     console.log("", activeInfo);
 
-    if (activeInfo.status == "complete" && activeInfo.url == "") {
-        chrome.tabs.remove(activeInfo.id);
-        console.log("closed1");
-        return
-    }
-
-    if (activeInfo.pendingUrl) {
+    if (activeInfo.pendingUrl || activeInfo.url) {
         m.forEach(el => {
-            if (activeInfo.pendingUrl.includes(el)) {
+            if (activeInfo.pendingUrl.includes(el) || activeInfo.url.includes(el)) {
                 console.log("closed2");
                 chrome.tabs.remove(activeInfo.id);
             }
