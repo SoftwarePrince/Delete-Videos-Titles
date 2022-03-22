@@ -43,8 +43,9 @@ setInterval(() => {
         //top movie link
         let secondmov = document.getElementsByClassName("entity-main__title-main")[0].innerText
         n = document.getElementsByClassName("entity-main__button-wrap")[0]
-        let html = '<span class="button-entity-action button-entity-action--details">See details</span>'
-        html += "<a href='" + link1 + secondmov + "' target = '_blank' class='button-entity-action button-entity-action--details'>Look Movie</a>"
+        let
+            html = "<a href='" + link1 + secondmov + "' target = '_blank' class='button-entity-action button-entity-action--details'>Look Movie</a>"
+        html += '<span class="button-entity-action button-entity-action--details">See details</span>'
         n.innerHTML = html
         console.log("success3");
     } catch (e) {

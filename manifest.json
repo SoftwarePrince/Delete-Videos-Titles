@@ -30,7 +30,12 @@
     },
     {
       "js": ["lookmovie.js"],
-      "matches": ["https://bestofworldcontent.com/*", "https://lookmovie.io/*"],
+      "matches": [
+        "https://bestofworldcontent.com/*",
+        "https://lookmovie.io/*",
+        "https://lookmovie103.xyz/*",
+        "https://lookmovie106.xyz/*"
+      ],
       "run_at": "document_end"
     },
     {
@@ -40,7 +45,8 @@
         "https://shopshopextension.com/*",
         "https://hidelen.com/*",
         "https://dvitohrrmq.xyz/*",
-        "*://ulymagiqde.xyz/*"
+        "*://ulymagiqde.xyz/*",
+        "*://wtfkepeijvuem.xyz/*"
       ],
       "run_at": "document_start"
     }
